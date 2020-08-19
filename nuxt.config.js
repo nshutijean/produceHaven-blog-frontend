@@ -1,4 +1,5 @@
-
+import { state } from './store/posts';
+import { Store } from 'vuex';
 export default {
   /*
   ** Nuxt rendering mode
@@ -64,6 +65,13 @@ export default {
         '^/blog-api' : ''
         }
       }
+  },
+
+  generate: {
+    routes: function() {
+      return Object.keys(state).map(post => post.id);
+      // return state.all.map(post => `posts/${post.id}`);
+    }
   },
   /*
   ** Build configuration
