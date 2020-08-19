@@ -60,7 +60,7 @@ export default {
   },
   proxy: {
     '/blog-api': {
-      target: 'http://localhost:8000/api',
+      target: 'https://producehaven-blog.herokuapp.com/api',
       pathRewrite: {
         '^/blog-api' : ''
         }
