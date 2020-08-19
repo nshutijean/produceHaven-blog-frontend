@@ -67,7 +67,7 @@ export default {
           let imageUrl = this.form.imageUrl;
           let content = this.form.content;
         
-          await this.$axios.$post('/blog-api/blog-post', {username, career, socialMediaUrl, title, imageUrl, content}, {headers: this.headers})
+          await this.$axios.$post('/blog-post', {username, career, socialMediaUrl, title, imageUrl, content}, {headers: this.headers})
           .then((res) => {
             this.post = res.data;
             this.isStored = true;
