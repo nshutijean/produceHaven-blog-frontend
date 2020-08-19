@@ -59,12 +59,12 @@ export default {
     proxy: true
   },
   proxy: {
-    '/blog-api': {
-      target: 'https://producehaven-blog.herokuapp.com/api',
-      pathRewrite: {
-        '^/blog-api' : ''
-        }
-      }
+    // '/blog-api': {
+    //   target: 'https://producehaven-blog.herokuapp.com/api',
+    //   pathRewrite: {
+    //     '^/blog-api' : ''
+    //     }
+    //   }
   },
 
   generate: {
