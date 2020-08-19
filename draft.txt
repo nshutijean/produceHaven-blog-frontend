@@ -1,0 +1,20 @@
+// this.$store.state.posts.all.push({
+            //     author: {
+            //         name: this.form.name,
+            //         career: this.form.career,
+            //         social: this.form.social
+            //     },
+            //     title: this.form.title,
+            //     content: this.form.content
+            // })
+            const target = this.$store.state.posts.all
+            const source = {
+              author: {
+                  name: this.form.name,
+                  career: this.form.career,
+                  social: this.form.social
+                },
+                title: this.form.title,
+                content: this.form.content
+            }
+          Object.assign(target, source);
